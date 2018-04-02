@@ -1,0 +1,2 @@
+# CLionAVRDudePlugin
+CLion AVRDude plugin
