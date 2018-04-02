@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements CidrExecutableDataHolder {
-    public String test = "avrdude-test def value";
+    String test = "avrdude-test def value";
 
 
     @SuppressWarnings("WeakerAccess")

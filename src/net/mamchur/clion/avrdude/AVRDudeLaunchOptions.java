@@ -26,11 +26,11 @@ class AVRDudeLaunchOptions {
         return binFile;
     }
 
-    public String getMcu() {
+    String getMcu() {
         return mcu;
     }
 
-    public String getProgrammer() {
+    String getProgrammer() {
         return programmer;
     }
 }
