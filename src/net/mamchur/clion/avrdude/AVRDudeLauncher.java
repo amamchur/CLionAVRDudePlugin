@@ -35,7 +35,6 @@ public class AVRDudeLauncher extends CidrLauncher {
         CMakeAppRunConfiguration.BuildAndRunConfigurations runCfg = configuration.getBuildAndRunConfigurations(targetName);
 
         Project project = commandLineState.getEnvironment().getProject();
-        GeneralCommandLine commandLine = new PtyCommandLine();
         String path = project.getBaseDir().getPath();
         File runFile = Objects.requireNonNull(runCfg).getRunFile();
 
@@ -51,6 +50,7 @@ public class AVRDudeLauncher extends CidrLauncher {
         params.add(options.getProgrammer());
         params.add(options.getUploadFlashParam());
 
+        GeneralCommandLine commandLine = new PtyCommandLine();
         commandLine
                 .withWorkDirectory(path)
                 .withParentEnvironmentType(GeneralCommandLine.ParentEnvironmentType.CONSOLE)

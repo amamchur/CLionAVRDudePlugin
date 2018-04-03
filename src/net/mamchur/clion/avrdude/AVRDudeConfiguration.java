@@ -14,7 +14,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements CidrExecutableDataHolder {
-    String test = "avrdude-test def value";
+    private static final String NODE_AVRDUDE = "avrdude";
+    private static final String ATTRIBUTE_PORT = "port";
+    private static final String ATTRIBUTE_PROGRAMMER = "programmer";
+
+    String programmer = "usbasp";
+    String port = "avrdude-port def value";
 
 
     @SuppressWarnings("WeakerAccess")
@@ -32,13 +37,28 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
     public void writeExternal(@NotNull Element element) throws WriteExternalException {
         super.writeExternal(element);
 
-        element.setAttribute("avrdude-test", String.valueOf(test));
+        Element scriptElement = new Element(NODE_AVRDUDE);
+        element.addContent(scriptElement);
+
+        if (port != null) {
+            scriptElement.setAttribute(ATTRIBUTE_PORT, port);
+        }
+
+        if (programmer != null) {
+            scriptElement.setAttribute(ATTRIBUTE_PROGRAMMER, programmer);
+        }
     }
 
     @Override
     public void readExternal(@NotNull Element element) throws InvalidDataException {
         super.readExternal(element);
 
-        test = element.getAttributeValue("avrdude-test");
+        Element scriptElement = element.getChild(NODE_AVRDUDE);
+        if (scriptElement == null) {
+            return;
+        }
+
+        port = scriptElement.getAttributeValue(ATTRIBUTE_PORT);
+        programmer = scriptElement.getAttributeValue(ATTRIBUTE_PROGRAMMER);
     }
 }
