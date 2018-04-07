@@ -18,8 +18,24 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
     private static final String ATTRIBUTE_PORT = "port";
     private static final String ATTRIBUTE_PROGRAMMER = "programmer";
 
-    String programmer = "usbasp";
-    String port = "avrdude-port def value";
+    private String programmer = "usbasp";
+    private String port = "";
+
+    public String getProgrammer() {
+        return programmer;
+    }
+
+    public void setProgrammer(String programmer) {
+        this.programmer = programmer;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
 
 
     @SuppressWarnings("WeakerAccess")

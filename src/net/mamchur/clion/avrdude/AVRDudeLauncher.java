@@ -13,11 +13,13 @@ import com.intellij.xdebugger.XDebugSession;
 import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
 import com.jetbrains.cidr.execution.debugger.CidrDebugProcess;
 import com.jetbrains.cidr.execution.testing.CidrLauncher;
+import com.yourkit.util.Strings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -43,11 +45,21 @@ public class AVRDudeLauncher extends CidrLauncher {
             throw new ExecutionException("Binary file not found");
         }
 
+        commandLineState.getRunnerSettings();
+
+        String str = configuration.getProgramParameters();
+        String args[] = new String[0];
+        if (!Strings.isNullOrEmpty(str)) {
+            args = str.split(" ", -1);
+        }
+
         ArrayList<String> params = new ArrayList<>();
         params.add("-p");
         params.add(options.getMcu());
         params.add("-c");
         params.add(options.getProgrammer());
+
+        Collections.addAll(params, args);
         params.add(options.getUploadFlashParam());
 
         GeneralCommandLine commandLine = new PtyCommandLine();

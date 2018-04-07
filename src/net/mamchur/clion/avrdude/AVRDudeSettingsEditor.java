@@ -1,15 +1,10 @@
 package net.mamchur.clion.avrdude;
 
-import com.intellij.execution.ui.CommonProgramParametersPanel;
 import com.intellij.icons.AllIcons;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.FixedSizeButton;
-import com.intellij.openapi.ui.popup.JBPopupFactory;
-import com.intellij.ui.JBColor;
-import com.intellij.ui.components.JBCheckBox;
 import com.intellij.ui.components.JBLabel;
-import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBTextField;
 import com.intellij.util.ui.GridBag;
 import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
@@ -19,8 +14,10 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -40,8 +37,8 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
         AVRDudeConfiguration cfg = (AVRDudeConfiguration) cMakeAppRunConfiguration;
         String programmer = (String) programmersComboBox.getSelectedItem();
 
-        cfg.port = portTextField.getText();
-        cfg.programmer = programmer == null ? "" : programmer;
+        cfg.setPort(portTextField.getText());
+        cfg.setProgrammer(programmer);
     }
 
     @Override
@@ -49,13 +46,13 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
         super.resetEditorFrom(cMakeAppRunConfiguration);
 
         AVRDudeConfiguration cfg = (AVRDudeConfiguration) cMakeAppRunConfiguration;
-        portTextField.setText(cfg.port);
+        portTextField.setText(cfg.getPort());
 
-        int index = programmersModel.getIndexOf(cfg.programmer);
+        int index = programmersModel.getIndexOf(cfg.getProgrammer());
         if (index != -1) {
             programmersComboBox.setSelectedIndex(index);
         } else {
-            String[] strings = {cfg.programmer};
+            String[] strings = {cfg.getProgrammer()};
             programmersModel = new DefaultComboBoxModel<>(strings);
             programmersComboBox.setModel(programmersModel);
             programmersComboBox.setSelectedIndex(0);
@@ -122,9 +119,8 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
     protected void createEditorInner(JPanel panel, GridBag gridBag) {
         super.createEditorInner(panel, gridBag);
 
-        panel.setBackground(JBColor.YELLOW);
-        panel.add(new JButton("Upload firmware to the target"));
-        panel.add(new JBCheckBox("Halt target after reset"));
+//        panel.add(new JButton("Upload firmware to the target"));
+//        panel.add(new JBCheckBox("Halt target after reset"));
 
 //        for (Component component : panel.getComponents()) {
 //            if (component instanceof CommonProgramParametersPanel) {

@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.your.company.unique.plugin.id</id>
-    <name>Plugin display name here</name>
+    <name>AVRDude Plugin for CLion </name>
     <version>1.0</version>
     <vendor email="andrii@mamchur.net" url="http://www.yourcompany.com">YourCompany</vendor>
 
