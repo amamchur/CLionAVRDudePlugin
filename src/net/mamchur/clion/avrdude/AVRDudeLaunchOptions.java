@@ -1,36 +1,22 @@
 package net.mamchur.clion.avrdude;
 
 class AVRDudeLaunchOptions {
-    static final String MemTypeFlash = "flash";
+    private static final String MemTypeFlash = "flash";
 
-    private String programmer = "usbasp";
-    private String binFile;
-    private String mcu;
+    private String elfFile;
 
-    AVRDudeLaunchOptions(String binFile, String mcu) {
-        this.binFile = binFile;
-        this.mcu = mcu;
+    AVRDudeLaunchOptions(String elfFile) {
+        this.elfFile = elfFile;
     }
 
     String getUploadFlashParam() {
         StringBuilder builder = new StringBuilder();
-        builder.append("-U");
-        builder.append(MemTypeFlash);
-        builder.append(":w");
-        builder.append(":" + binFile);
-        builder.append(":r");
+        builder.append("-U").append(MemTypeFlash);
+        builder.append(":w").append(":").append(elfFile).append(":e");
         return builder.toString();
     }
 
-    public String getBinFile() {
-        return binFile;
-    }
-
-    String getMcu() {
-        return mcu;
-    }
-
-    String getProgrammer() {
-        return programmer;
+    public String getElfFile() {
+        return elfFile;
     }
 }

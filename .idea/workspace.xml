@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04baac26-57c5-47c7-847a-32e56d79acbf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" afterDir="false" />
     </list>
@@ -19,61 +21,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="AVRDudeSettingsEditor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+            <state relative-caret-position="222">
+              <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AVRDudeConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3606#5618#0" expanded="true" />
-                <element signature="e#5617#5618#0" expanded="true" />
+                <element signature="e#1379#1380#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1488#1489#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FixedSizeButton.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/FixedSizeButton.class">
+      <file leaf-file-name="AVRDudeLauncher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="481">
+              <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
               <folding>
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2910#3099#0" expanded="true" />
+                <element signature="e#3098#3099#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CidrRunConfigurationSettingsEditor.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="88" column="70" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonProgramParametersPanel.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/CommonProgramParametersPanel.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="102" column="58" selection-start-line="102" selection-start-column="58" selection-end-line="102" selection-end-column="58" />
-              <folding>
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2073#2074#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllIcons.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/icons/AllIcons.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="235" column="39" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -86,7 +69,6 @@
       <find>mySwingPopup</find>
       <find>objects</find>
       <find>weighty</find>
-      <find>programmersComboBox</find>
       <find>worki</find>
       <find>myWorkingDirectoryComponent</find>
       <find>myWorkingDirectoryComboBox</find>
@@ -95,6 +77,8 @@
       <find>createComponentWithMacroBrowse</find>
       <find>myEnvVariablesComponent</find>
       <find>FixedSizeButton</find>
+      <find>programmersComboBox</find>
+      <find>devicesModel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,9 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CLionAVRDudePlugin.iml" />
+        <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" />
-        <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" />
       </list>
     </option>
@@ -125,17 +109,16 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2022" />
-    <option name="y" value="37" />
-    <option name="width" value="1772" />
-    <option name="height" value="977" />
+    <option name="x" value="2002" />
+    <option name="y" value="24" />
+    <option name="width" value="1804" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -144,6 +127,23 @@
             <path>
               <item name="CLionAVRDudePlugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="CLionAVRDudePlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CLionAVRDudePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CLionAVRDudePlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CLionAVRDudePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CLionAVRDudePlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CLionAVRDudePlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CLionAVRDudePlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="avrdude" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CLionAVRDudePlugin" type="b2602c69:ProjectViewProjectNode" />
@@ -160,13 +160,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -231,7 +232,7 @@
       <module name="CLionAVRDudePlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <alternative-path path="CLion CL-181.4203.549" alternative-path-enabled="true" />
+      <alternative-path path="CLion CL-181.5281.33" alternative-path-enabled="true" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -267,37 +268,41 @@
       <workItem from="1522701792734" duration="350000" />
       <workItem from="1522702301914" duration="1331000" />
       <workItem from="1522747709985" duration="13782000" />
+      <workItem from="1523343885592" duration="1026000" />
+      <workItem from="1523352581279" duration="242000" />
+      <workItem from="1529322254764" duration="4362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19192000" />
+    <option name="totallyTimeSpent" value="24822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2037" y="59" width="1772" height="977" extended-state="0" />
+    <frame x="2002" y="24" width="1804" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49420625" weight="0.3108747" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49374288" weight="0.3107221" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5052144" side_tool="true" visible="true" weight="0.26595744" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5073948" side_tool="true" weight="0.34354487" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49594438" weight="0.43498817" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49544936" weight="0.43435448" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49886236" weight="0.32932165" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23174971" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2360637" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49884126" weight="0.32978722" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49772468" weight="0.24179432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49478564" visible="true" weight="0.26595744" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49260524" visible="true" weight="0.40043762" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,57 +318,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3606#5618#0" expanded="true" />
-            <element signature="e#5617#5618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -381,6 +351,10 @@
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,6 +372,10 @@
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,6 +393,10 @@
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -427,35 +409,10 @@
       </provider>
     </entry>
     <entry file="jar:///Applications/CLion.app/Contents/lib/util.jar!/com/intellij/openapi/util/IconLoader.class" />
-    <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,13 +423,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/ui/ActionItemsComboBox.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/ui/ActionItemsComboBox.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -484,34 +435,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="65" column="11" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="65" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/openapi/util/Key.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/execution/process/ProcessAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/execution/process/OSProcessHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/openapi/util/Key.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/execution/process/ProcessAdapter.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/execution/process/OSProcessHandler.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/plaf/ComboBoxUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -519,13 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/ComboBoxWithWidePopup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/ComboBoxWithWidePopup.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -537,17 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/ComboBox.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#7714#7715#0" expanded="true" />
-            <element signature="e#7760#7761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/ComboBox.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Process.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -555,13 +465,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/commons-compress-1.10.jar!/org/apache/commons/compress/utils/IOUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/commons-compress-1.10.jar!/org/apache/commons/compress/utils/IOUtils.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/ProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -573,20 +477,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-443">
           <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
-          <folding>
-            <element signature="e#2789#2790#0" expanded="true" />
-            <element signature="e#2821#2822#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/util/ui/GridBag.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/util/ui/GridBag.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/GridBagConstraints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -594,35 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/DefaultComboBoxModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="122" column="27" lean-forward="true" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-          <folding>
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2782#2783#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="411" column="5" lean-forward="true" selection-start-line="411" selection-start-column="5" selection-end-line="411" selection-end-column="5" />
-          <folding>
-            <element signature="e#14072#14073#0" expanded="true" />
-            <element signature="e#14108#14109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,100 +502,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeAppRunConfigurationSettingsEditor.class">
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeAppRunConfigurationSettingsEditor.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationExecutableEditor.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/MacroComboBoxWithBrowseButton.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/ui/components/JBList.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/jdom.jar!/org/jdom/Element.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/configuration/EnvironmentVariablesComponent.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/configuration/EnvironmentVariablesTextFieldWithBrowseButton.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/icons/AllIcons.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/CommonProgramParametersPanel.class" />
+    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/FixedSizeButton.class" />
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationExecutableEditor.class">
+    <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/MacroComboBoxWithBrowseButton.class">
+    <entry file="jar:///opt/clion-2018.1.5/lib/openapi.jar!/com/intellij/execution/configurations/CommandLineState.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/ui/components/JBList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/jdom.jar!/org/jdom/Element.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/configuration/EnvironmentVariablesComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/configuration/EnvironmentVariablesTextFieldWithBrowseButton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1305">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/icons/AllIcons.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="235" column="39" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="88" column="70" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/CommonProgramParametersPanel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="102" column="58" selection-start-line="102" selection-start-column="58" selection-end-line="102" selection-end-column="58" />
+        <state relative-caret-position="221">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
           <folding>
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2275#2276#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/FixedSizeButton.class">
+    <entry file="jar:///opt/clion-2018.1.5/lib/openapi.jar!/com/intellij/execution/configurations/RunnerSettings.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="90">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/clion-2018.1.5/lib/util.jar!/com/intellij/openapi/util/JDOMExternalizable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2910#3099#0" expanded="true" />
+            <element signature="e#3098#3099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/DefaultComboBoxModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/clion-2018.1.5/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeAppRunConfigurationSettingsEditor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="67" lean-forward="true" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="method#CMakeAppRunConfigurationSettingsEditor#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#getTargets#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#resetBuildAndConfigurationFrom#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#applyBuildAndConfigurationTo#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#createAdditionalControls#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#onTargetSelected#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#applyEditorTo#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+            <element signature="method#resetEditorFrom#0;class#CMakeAppRunConfigurationSettingsEditor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/clion-2018.1.5/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3606#5618#0" expanded="true" />
-            <element signature="e#5617#5618#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -770,7 +672,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>CLion CL-181.5281.33</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

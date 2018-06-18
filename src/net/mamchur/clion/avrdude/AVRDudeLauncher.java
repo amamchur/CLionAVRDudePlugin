@@ -15,14 +15,11 @@ import com.jetbrains.cidr.execution.debugger.CidrDebugProcess;
 import com.jetbrains.cidr.execution.testing.CidrLauncher;
 import com.yourkit.util.Strings;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class AVRDudeLauncher extends CidrLauncher {
     private final AVRDudeConfiguration configuration;
@@ -40,24 +37,19 @@ public class AVRDudeLauncher extends CidrLauncher {
         String path = project.getBaseDir().getPath();
         File runFile = Objects.requireNonNull(runCfg).getRunFile();
 
-        AVRDudeLaunchOptions options = getAVRDudeOptions(runFile);
-        if (options == null) {
-            throw new ExecutionException("Binary file not found");
-        }
+        AVRDudeLaunchOptions options = new AVRDudeLaunchOptions(runFile.getAbsolutePath());
 
-        commandLineState.getRunnerSettings();
-
-        String str = configuration.getProgramParameters();
+        String parameters = configuration.getProgramParameters();
         String args[] = new String[0];
-        if (!Strings.isNullOrEmpty(str)) {
-            args = str.split(" ", -1);
+        if (!Strings.isNullOrEmpty(parameters)) {
+            args = parameters.split(" ", -1);
         }
 
         ArrayList<String> params = new ArrayList<>();
         params.add("-p");
-        params.add(options.getMcu());
+        params.add(configuration.getDevice());
         params.add("-c");
-        params.add(options.getProgrammer());
+        params.add(configuration.getProgrammer());
 
         Collections.addAll(params, args);
         params.add(options.getUploadFlashParam());
@@ -77,28 +69,6 @@ public class AVRDudeLauncher extends CidrLauncher {
             }
         });
         return handler;
-    }
-
-    @Nullable
-    private AVRDudeLaunchOptions getAVRDudeOptions(File runFile) {
-        String name = Objects.requireNonNull(runFile).getName();
-        String pattern = "^" + name + "-(.+)\\.bin$";
-        File directory = runFile.getParentFile();
-        File[] files = directory.listFiles();
-        assert files != null;
-        for (File file : files) {
-            if (file.isDirectory()) {
-                continue;
-            }
-
-            Pattern p = Pattern.compile(pattern);
-            Matcher m = p.matcher(file.getName());
-            if (m.find()) {
-                return new AVRDudeLaunchOptions(file.getAbsolutePath(), m.group(1));
-            }
-        }
-
-        return null;
     }
 
     @NotNull

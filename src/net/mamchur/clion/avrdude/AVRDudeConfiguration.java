@@ -17,9 +17,11 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
     private static final String NODE_AVRDUDE = "avrdude";
     private static final String ATTRIBUTE_PORT = "port";
     private static final String ATTRIBUTE_PROGRAMMER = "programmer";
+    private static final String ATTRIBUTE_DEVICE = "device";
 
     private String programmer = "usbasp";
     private String port = "";
+    private String device = "";
 
     public String getProgrammer() {
         return programmer;
@@ -37,6 +39,13 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
         this.port = port;
     }
 
+    public String getDevice() {
+        return device;
+    }
+
+    public void setDevice(String device) {
+        this.device = device;
+    }
 
     @SuppressWarnings("WeakerAccess")
     public AVRDudeConfiguration(Project project, ConfigurationFactory configurationFactory, String targetName) {
@@ -63,6 +72,10 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
         if (programmer != null) {
             scriptElement.setAttribute(ATTRIBUTE_PROGRAMMER, programmer);
         }
+
+        if (device != null) {
+            scriptElement.setAttribute(ATTRIBUTE_DEVICE, device);
+        }
     }
 
     @Override
@@ -76,5 +89,6 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
 
         port = scriptElement.getAttributeValue(ATTRIBUTE_PORT);
         programmer = scriptElement.getAttributeValue(ATTRIBUTE_PROGRAMMER);
+        device = scriptElement.getAttributeValue(ATTRIBUTE_DEVICE);
     }
 }

@@ -25,20 +25,57 @@ import java.util.regex.Pattern;
 public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEditor {
     private JBTextField portTextField;
     private ComboBox<String> programmersComboBox;
+    private ComboBox<String> deviceComboBox;
     private DefaultComboBoxModel<String> programmersModel = new DefaultComboBoxModel<>();
+    private DefaultComboBoxModel<String> devicesModel = new DefaultComboBoxModel<>();
 
     AVRDudeSettingsEditor(Project project, @NotNull CMakeBuildConfigurationHelper cMakeBuildConfigurationHelper) {
         super(project, cMakeBuildConfigurationHelper);
+
+        String[] array = readAvrdudeConfig("-c?");
+        programmersModel = new DefaultComboBoxModel<>(array);
+
+        array = readAvrdudeConfig("-p?");
+        devicesModel = new DefaultComboBoxModel<>(array);
+    }
+
+    private String[] readAvrdudeConfig(String param) {
+        ArrayList<String> arguments = new ArrayList<>();
+        arguments.add("avrdude");
+        arguments.add(param);
+
+        ProcessBuilder pb = new ProcessBuilder(arguments);
+        pb.redirectErrorStream(true);
+        try {
+            Process process = pb.start();
+            InputStream stream = process.getInputStream();
+            InputStreamReader reader = new InputStreamReader(stream);
+            BufferedReader br = new BufferedReader(reader);
+            ArrayList<String> list = new ArrayList<>();
+            String line;
+            while ((line = br.readLine()) != null) {
+                Pattern p = Pattern.compile("^\\s+(.+?)\\s*=\\s*(.+)$");
+                Matcher m = p.matcher(line);
+                if (m.find()) {
+                    list.add(m.group(1));
+                }
+            }
+            process.waitFor();
+            return list.toArray(new String[0]);
+        } catch (IOException | InterruptedException e1) {
+            e1.printStackTrace();
+        }
+
+        return new String[0];
     }
 
     @Override
     protected void applyEditorTo(@NotNull CMakeAppRunConfiguration cMakeAppRunConfiguration) throws com.intellij.openapi.options.ConfigurationException {
         super.applyEditorTo(cMakeAppRunConfiguration);
         AVRDudeConfiguration cfg = (AVRDudeConfiguration) cMakeAppRunConfiguration;
-        String programmer = (String) programmersComboBox.getSelectedItem();
-
         cfg.setPort(portTextField.getText());
-        cfg.setProgrammer(programmer);
+        cfg.setProgrammer((String) programmersComboBox.getSelectedItem());
+        cfg.setDevice((String) deviceComboBox.getSelectedItem());
     }
 
     @Override
@@ -57,6 +94,16 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
             programmersComboBox.setModel(programmersModel);
             programmersComboBox.setSelectedIndex(0);
         }
+
+        index = devicesModel.getIndexOf(cfg.getDevice());
+        if (index != -1) {
+            deviceComboBox.setSelectedIndex(index);
+        } else {
+            String[] strings = {cfg.getDevice()};
+            devicesModel = new DefaultComboBoxModel<>(strings);
+            deviceComboBox.setModel(devicesModel);
+            deviceComboBox.setSelectedIndex(0);
+        }
     }
 
     @Override
@@ -67,66 +114,17 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
         programmersComboBox.setModel(programmersModel);
         programmersComboBox.setEditable(true);
 
-        FixedSizeButton updateButton = new FixedSizeButton();
-        updateButton.setIcon(AllIcons.RunConfigurations.Remote);
-        updateButton.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ArrayList<String> arguments = new ArrayList<>();
-                arguments.add("avrdude");
-                arguments.add("-c?");
-
-                ProcessBuilder pb = new ProcessBuilder(arguments);
-                pb.redirectErrorStream(true);
-                try {
-                    Process process = pb.start();
-                    InputStream stream = process.getInputStream();
-                    InputStreamReader reader = new InputStreamReader(stream);
-                    BufferedReader br = new BufferedReader(reader);
-                    ArrayList<String> list = new ArrayList<>();
-                    String line;
-                    while ((line = br.readLine()) != null) {
-                        Pattern p = Pattern.compile("^\\s+(.+?)\\s*=\\s*(.+)$");
-                        Matcher m = p.matcher(line);
-                        if (m.find()) {
-                            list.add(m.group(1));
-                        }
-                    }
-                    process.waitFor();
-                    String[] array = list.toArray(new String[0]);
-                    String item = (String) programmersComboBox.getSelectedItem();
-                    int index = list.indexOf(item);
-                    programmersModel = new DefaultComboBoxModel<>(array);
-                    programmersComboBox.setModel(programmersModel);
-                    if (index != -1) {
-                        programmersComboBox.setSelectedIndex(index);
-                    }
-                } catch (IOException | InterruptedException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        });
-
         panel.add(new JBLabel("Programmer"), gridBag.nextLine().next());
-        panel.add(programmersComboBox, gridBag.next());
-        panel.add(updateButton);
+        panel.add(programmersComboBox,gridBag.next().coverLine());
+
+        deviceComboBox = new ComboBox<>();
+        deviceComboBox.setModel(devicesModel);
+        deviceComboBox.setEditable(true);
+
+        panel.add(new JBLabel("Device"), gridBag.nextLine().next());
+        panel.add(deviceComboBox,gridBag.next().coverLine());
 
         panel.add(new JBLabel("Port"), gridBag.nextLine().next());
         panel.add(portTextField = new JBTextField(""), gridBag.next().coverLine());
-    }
-
-    @Override
-    protected void createEditorInner(JPanel panel, GridBag gridBag) {
-        super.createEditorInner(panel, gridBag);
-
-//        panel.add(new JButton("Upload firmware to the target"));
-//        panel.add(new JBCheckBox("Halt target after reset"));
-
-//        for (Component component : panel.getComponents()) {
-//            if (component instanceof CommonProgramParametersPanel) {
-//                component.setBackground(new Color(0, 0, 255, 100));
-//                component.setVisible(false);
-//            }
-//        }
     }
 }
