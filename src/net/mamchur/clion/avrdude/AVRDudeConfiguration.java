@@ -21,29 +21,29 @@ public class AVRDudeConfiguration extends CMakeAppRunConfiguration implements Ci
 
     private String programmer = "usbasp";
     private String port = "";
-    private String device = "";
+    private String device = "m328p";
 
-    public String getProgrammer() {
+    String getProgrammer() {
         return programmer;
     }
 
-    public void setProgrammer(String programmer) {
+    void setProgrammer(String programmer) {
         this.programmer = programmer;
     }
 
-    public String getPort() {
+    String getPort() {
         return port;
     }
 
-    public void setPort(String port) {
+    void setPort(String port) {
         this.port = port;
     }
 
-    public String getDevice() {
+    String getDevice() {
         return device;
     }
 
-    public void setDevice(String device) {
+    void setDevice(String device) {
         this.device = device;
     }
 

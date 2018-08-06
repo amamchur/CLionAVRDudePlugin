@@ -14,6 +14,7 @@ import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
 import com.jetbrains.cidr.execution.debugger.CidrDebugProcess;
 import com.jetbrains.cidr.execution.testing.CidrLauncher;
 import com.yourkit.util.Strings;
+import org.apache.commons.lang.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
@@ -50,6 +51,12 @@ public class AVRDudeLauncher extends CidrLauncher {
         params.add(configuration.getDevice());
         params.add("-c");
         params.add(configuration.getProgrammer());
+
+        String port = configuration.getPort();
+        if (StringUtils.isNotBlank(port)) {
+            params.add("-P");
+            params.add(port);
+        }
 
         Collections.addAll(params, args);
         params.add(options.getUploadFlashParam());

@@ -15,8 +15,4 @@ class AVRDudeLaunchOptions {
         builder.append(":w").append(":").append(elfFile).append(":e");
         return builder.toString();
     }
-
-    public String getElfFile() {
-        return elfFile;
-    }
 }
