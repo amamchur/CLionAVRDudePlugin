@@ -1,5 +1,6 @@
 package net.mamchur.clion.avrdude;
 
+import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.vfs.LocalFileSystem;
@@ -16,6 +17,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,14 +28,15 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
     private DefaultComboBoxModel<String> programmersModel;
     private DefaultComboBoxModel<String> devicesModel;
 
-    AVRDudeSettingsEditor(Project project, @NotNull CMakeBuildConfigurationHelper cMakeBuildConfigurationHelper) {
-        super(project, cMakeBuildConfigurationHelper);
+    AVRDudeSettingsEditor(Project project, @NotNull CMakeBuildConfigurationHelper helper) {
+        super(project, helper);
     }
 
     private void initComboModels() {
         if (programmersModel != null && devicesModel != null) {
             return;
         }
+
 
         String[] array = readAvrdudeConfig("-c?");
         programmersModel = new DefaultComboBoxModel<>(array);
@@ -43,14 +46,37 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
     }
 
     private String[] readAvrdudeConfig(String param) {
+        Map<String, String> env = System.getenv();
+        String pathEvn = env.getOrDefault("PATH", null);
+        if (pathEvn == null) {
+            return new String[]{};
+        }
+
+        String[] paths = pathEvn.split("[:;]", 0);
+        File avrdudeBin = null;
+        for (String str : paths) {
+            VirtualFile folder = LocalFileSystem.getInstance().findFileByPath(str);
+            if (folder == null) {
+                continue;
+            }
+
+            VirtualFile avrdudeBinary = folder.findFileByRelativePath("avrdude");
+            if (avrdudeBinary == null) {
+                continue;
+            }
+
+            avrdudeBin = VfsUtil.virtualToIoFile(avrdudeBinary);
+            break;
+        }
+
+        if (avrdudeBin == null) {
+            return new String[]{};
+        }
+
         String[] result;
         try {
-            VirtualFile binFolder = LocalFileSystem.getInstance().findFileByPath("/usr/local/bin");
-            VirtualFile avrdudeBinary = binFolder.findFileByRelativePath("avrdude");
-            File ocdBinaryIo = VfsUtil.virtualToIoFile(avrdudeBinary);
-
             ArrayList<String> arguments = new ArrayList<>();
-            arguments.add(ocdBinaryIo.getAbsolutePath());
+            arguments.add(avrdudeBin.getAbsolutePath());
             arguments.add(param);
 
             ProcessBuilder pb = new ProcessBuilder(arguments);
@@ -80,34 +106,22 @@ public class AVRDudeSettingsEditor extends CMakeAppRunConfigurationSettingsEdito
     }
 
     @Override
-    protected void applyEditorTo(@NotNull CMakeAppRunConfiguration cMakeAppRunConfiguration) throws com.intellij.openapi.options.ConfigurationException {
-        super.applyEditorTo(cMakeAppRunConfiguration);
-        AVRDudeConfiguration cfg = (AVRDudeConfiguration) cMakeAppRunConfiguration;
+    protected void applyEditorTo(@NotNull CMakeAppRunConfiguration runConfiguration) throws ConfigurationException {
+        super.applyEditorTo(runConfiguration);
+        AVRDudeConfiguration cfg = (AVRDudeConfiguration) runConfiguration;
         cfg.setPort(portTextField.getText());
         cfg.setProgrammer((String) programmersComboBox.getSelectedItem());
         cfg.setDevice((String) deviceComboBox.getSelectedItem());
     }
 
     @Override
-    protected void resetEditorFrom(@NotNull CMakeAppRunConfiguration cMakeAppRunConfiguration) {
-        super.resetEditorFrom(cMakeAppRunConfiguration);
+    protected void resetEditorFrom(@NotNull CMakeAppRunConfiguration runConfiguration) {
+        super.resetEditorFrom(runConfiguration);
 
-        AVRDudeConfiguration cfg = (AVRDudeConfiguration) cMakeAppRunConfiguration;
+        AVRDudeConfiguration cfg = (AVRDudeConfiguration) runConfiguration;
         portTextField.setText(cfg.getPort());
-
-        int index = programmersModel.getIndexOf(cfg.getProgrammer());
-        if (index != -1) {
-            programmersComboBox.setSelectedIndex(index);
-        } else {
-            programmersComboBox.setSelectedIndex(0);
-        }
-
-        index = devicesModel.getIndexOf(cfg.getDevice());
-        if (index != -1) {
-            deviceComboBox.setSelectedIndex(index);
-        } else {
-            deviceComboBox.setSelectedIndex(0);
-        }
+        programmersComboBox.setSelectedItem(cfg.getProgrammer());
+        deviceComboBox.setSelectedItem(cfg.getDevice());
     }
 
     @Override

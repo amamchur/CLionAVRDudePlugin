@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04baac26-57c5-47c7-847a-32e56d79acbf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +22,31 @@
       <file leaf-file-name="AVRDudeSettingsEditor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CLionAVRDudePlugin.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -38,11 +54,20 @@
       <file leaf-file-name="AVRDudeLauncher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="713">
               <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AVRDudeLaunchOptions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -62,8 +87,8 @@
       <file leaf-file-name="AVRDudeConfigurationType.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="-147">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1496#1497#0" expanded="true" />
@@ -106,10 +131,11 @@
       <list>
         <option value="$PROJECT_DIR$/CLionAVRDudePlugin.iml" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" />
-        <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" />
         <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java" />
       </list>
     </option>
   </component>
@@ -127,10 +153,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="28" />
-    <option name="width" value="1371" />
-    <option name="height" value="837" />
+    <option name="x" value="71" />
+    <option name="y" value="25" />
+    <option name="width" value="1309" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -250,7 +276,7 @@
       <module name="CLionAVRDudePlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <alternative-path path="CLion CL-181.5281.33" alternative-path-enabled="true" />
+      <alternative-path path="CLion CL-182.3684.76" alternative-path-enabled="true" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -291,15 +317,23 @@
       <workItem from="1529322254764" duration="4362000" />
       <workItem from="1532178633298" duration="3916000" />
       <workItem from="1532248997151" duration="875000" />
-      <workItem from="1533586103428" duration="418000" />
+      <workItem from="1533586103428" duration="3766000" />
     </task>
+    <task id="LOCAL-00001" summary="Implemented upload through specified port">
+      <created>1533586652942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533586652942</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30419000" />
+    <option name="totallyTimeSpent" value="33767000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="28" width="1371" height="837" extended-state="0" />
+    <frame x="54" y="29" width="1342" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -316,14 +350,14 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49886236" weight="0.32932165" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23401053" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23923077" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49260524" weight="0.28702492" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49260524" weight="0.3043478" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="8" sideWeight="0.581203" weight="0.36493507" />
@@ -339,36 +373,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented upload through specified port" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented upload through specified port" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Applications/CLion.app/Contents/lib/util.jar!/com/intellij/openapi/util/IconLoader.class" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/ui/ActionItemsComboBox.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Container.java" />
     <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/openapi/util/Key.class" />
     <entry file="jar:///opt/clion-2018.1/lib/util.jar!/com/intellij/execution/process/ProcessAdapter.class" />
@@ -396,33 +410,12 @@
     <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class" />
     <entry file="jar:///opt/clion-2018.1/lib/clion.jar!/com/intellij/execution/ui/CommonProgramParametersPanel.class" />
     <entry file="jar:///opt/clion-2018.1/lib/openapi.jar!/com/intellij/openapi/ui/FixedSizeButton.class" />
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/clion-2018.1.5/lib/openapi.jar!/com/intellij/execution/configurations/CommandLineState.class" />
     <entry file="jar:///opt/clion-2018.1.5/lib/openapi.jar!/com/intellij/execution/configurations/RunnerSettings.class" />
     <entry file="jar:///opt/clion-2018.1.5/lib/util.jar!/com/intellij/openapi/util/JDOMExternalizable.class" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/DefaultComboBoxModel.java" />
     <entry file="jar:///opt/clion-2018.1.5/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeAppRunConfigurationSettingsEditor.class" />
     <entry file="jar:///opt/clion-2018.1.5/lib/clion.jar!/com/jetbrains/cidr/execution/CidrRunConfigurationSettingsEditor.class" />
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Applications/CLion.app/Contents/lib/util.jar!/com/intellij/openapi/util/io/FileUtilRt.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -451,37 +444,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Applications/CLion.app/Contents/lib/velocity.jar!/org/apache/commons/lang/StringUtils.class" />
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Applications/CLion.app/Contents/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeRunConfigurationType.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -496,10 +459,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/CLion.app/Contents/lib/openapi.jar!/com/intellij/openapi/project/Project.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/CLion.app/Contents/lib/clion.jar!/com/jetbrains/cidr/cpp/execution/CMakeBuildConfigurationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1772">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/CLion.app/Contents/lib/openapi.jar!/com/intellij/openapi/vfs/VirtualFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-193">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1538">
+          <caret line="2328" column="20" selection-start-line="2328" selection-start-column="20" selection-end-line="2328" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLionAVRDudePlugin.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeSettingsEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="-147">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1496#1497#0" expanded="true" />
