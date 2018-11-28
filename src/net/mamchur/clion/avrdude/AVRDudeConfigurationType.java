@@ -6,9 +6,9 @@ import com.intellij.execution.configurations.RunConfiguration;
 import com.intellij.openapi.options.SettingsEditor;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.IconLoader;
+import com.intellij.openapi.util.NotNullLazyValue;
 import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
 import com.jetbrains.cidr.cpp.execution.CMakeRunConfigurationType;
-import kotlin.Lazy;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -19,23 +19,18 @@ public class AVRDudeConfigurationType extends CMakeRunConfigurationType {
     private final ConfigurationFactory factory;
 
     public AVRDudeConfigurationType() {
-        super(TYPE_ID, FACTORY_ID, "AVRDude", "Upload app using avrdude", new Lazy<Icon>() {
-                    Icon icon;
+        super(TYPE_ID, FACTORY_ID, "AVRDude", "Upload app using avrdude", new NotNullLazyValue<Icon>() {
+            Icon icon;
 
-                    @Override
-                    public Icon getValue() {
-                        if (icon == null) {
-                            icon = IconLoader.findIcon("run.png", AVRDudeConfigurationType.class);
-                        }
-                        return icon;
-                    }
-
-                    @Override
-                    public boolean isInitialized() {
-                        return icon != null;
-                    }
+            @NotNull
+            @Override
+            protected Icon compute() {
+                if (icon == null) {
+                    icon = IconLoader.findIcon("run.png", AVRDudeConfigurationType.class);
                 }
-        );
+                return icon;
+            }
+        });
 
         factory = new ConfigurationFactoryEx(this) {
             @NotNull
