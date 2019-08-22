@@ -28,6 +28,7 @@ public class AVRDudeConfigurationType extends CMakeRunConfigurationType {
                 if (icon == null) {
                     icon = IconLoader.findIcon("run.png", AVRDudeConfigurationType.class);
                 }
+                assert icon != null;
                 return icon;
             }
         });
@@ -44,6 +45,7 @@ public class AVRDudeConfigurationType extends CMakeRunConfigurationType {
                 return true;
             }
 
+            @NotNull
             @Override
             public String getId() {
                 return FACTORY_ID;

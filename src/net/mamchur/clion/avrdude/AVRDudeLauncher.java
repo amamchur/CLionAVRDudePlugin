@@ -13,7 +13,6 @@ import com.intellij.xdebugger.XDebugSession;
 import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
 import com.jetbrains.cidr.execution.debugger.CidrDebugProcess;
 import com.jetbrains.cidr.execution.testing.CidrLauncher;
-import com.yourkit.util.Strings;
 import org.apache.commons.lang.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
@@ -41,8 +40,8 @@ public class AVRDudeLauncher extends CidrLauncher {
         AVRDudeLaunchOptions options = new AVRDudeLaunchOptions(runFile.getAbsolutePath());
 
         String parameters = configuration.getProgramParameters();
-        String args[] = new String[0];
-        if (!Strings.isNullOrEmpty(parameters)) {
+        String[] args = new String[0];
+        if (parameters != null) {
             args = parameters.split(" ", -1);
         }
 
