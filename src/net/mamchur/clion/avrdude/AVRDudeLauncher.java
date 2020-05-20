@@ -34,7 +34,7 @@ public class AVRDudeLauncher extends CidrLauncher {
         CMakeAppRunConfiguration.BuildAndRunConfigurations runCfg = configuration.getBuildAndRunConfigurations(targetName);
 
         Project project = commandLineState.getEnvironment().getProject();
-        String path = project.getBaseDir().getPath();
+        String path = project.getBasePath();
         File runFile = Objects.requireNonNull(runCfg).getRunFile();
 
         AVRDudeLaunchOptions options = new AVRDudeLaunchOptions(runFile.getAbsolutePath());

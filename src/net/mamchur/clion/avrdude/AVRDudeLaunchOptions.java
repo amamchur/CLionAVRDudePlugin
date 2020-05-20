@@ -3,7 +3,7 @@ package net.mamchur.clion.avrdude;
 class AVRDudeLaunchOptions {
     private static final String MemTypeFlash = "flash";
 
-    private String elfFile;
+    private final String elfFile;
 
     AVRDudeLaunchOptions(String elfFile) {
         this.elfFile = elfFile;

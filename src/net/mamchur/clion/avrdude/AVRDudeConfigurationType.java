@@ -1,6 +1,5 @@
 package net.mamchur.clion.avrdude;
 
-import com.intellij.execution.configuration.ConfigurationFactoryEx;
 import com.intellij.execution.configurations.ConfigurationFactory;
 import com.intellij.execution.configurations.RunConfiguration;
 import com.intellij.openapi.options.SettingsEditor;
@@ -33,16 +32,11 @@ public class AVRDudeConfigurationType extends CMakeRunConfigurationType {
             }
         });
 
-        factory = new ConfigurationFactoryEx(this) {
+        factory = new ConfigurationFactory(this) {
             @NotNull
             @Override
             public RunConfiguration createTemplateConfiguration(@NotNull Project project) {
                 return new AVRDudeConfiguration(project, factory, "");
-            }
-
-            @Override
-            public boolean isConfigurationSingletonByDefault() {
-                return true;
             }
 
             @NotNull

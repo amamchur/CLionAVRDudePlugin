@@ -7,37 +7,15 @@
     <list default="true" id="04baac26-57c5-47c7-847a-32e56d79acbf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>gridBag</find>
-      <find>mySwingPopup</find>
-      <find>objects</find>
-      <find>weighty</find>
-      <find>worki</find>
-      <find>myWorkingDirectoryComponent</find>
-      <find>myWorkingDirectoryComboBox</find>
-      <find>myWorkingDirectoryComboBox =</find>
-      <find>myWorkingDirectoryComboBox.</find>
-      <find>createComponentWithMacroBrowse</find>
-      <find>myEnvVariablesComponent</find>
-      <find>FixedSizeButton</find>
-      <find>programmersComboBox</find>
-      <find>devicesModel</find>
-      <find>myExePath</find>
-      <find>usbasp</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/net/mamchur/clion/avrdude</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,18 +39,6 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -101,7 +67,7 @@
       <module name="CLionAVRDudePlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <alternative-path path="CLion CL-192.5728.100" alternative-path-enabled="true" />
+      <alternative-path path="CLion CL-201.7223.86" alternative-path-enabled="true" />
       <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,16 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -184,9 +140,76 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented upload through specified port" />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented upload through specified port" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="482" y="131" width="1024" height="857" key="#Project_Structure" timestamp="1589971739671">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="482" y="131" width="1024" height="857" key="#Project_Structure/72.27.1848.1053@72.27.1848.1053" timestamp="1589971739671" />
+    <state x="458" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589972621478">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="458" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1589972621478" />
+    <state x="734" y="407" width="520" height="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589972769509">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="734" y="407" width="520" height="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/72.27.1848.1053@72.27.1848.1053" timestamp="1589972769509" />
+    <state width="1802" height="299" key="GridCell.Tab.0.bottom" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.0.center" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.0.left" timestamp="1589972770296">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770296" />
+    <state width="1802" height="299" key="GridCell.Tab.0.right" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.1.bottom" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.1.center" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.1.left" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.1.right" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.2.bottom" timestamp="1589972770298">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.2.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770298" />
+    <state width="1802" height="299" key="GridCell.Tab.2.center" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.2.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.2.left" timestamp="1589972770297">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.2.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
+    <state width="1802" height="299" key="GridCell.Tab.2.right" timestamp="1589972770298">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="299" key="GridCell.Tab.2.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770298" />
+    <state x="684" y="290" width="623" height="522" key="find.popup" timestamp="1589972420497">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="684" y="290" width="623" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1589972420497" />
   </component>
 </project>
