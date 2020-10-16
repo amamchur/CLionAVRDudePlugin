@@ -1,13 +1,13 @@
 <idea-plugin>
     <id>com.your.company.unique.plugin.id</id>
     <name>AVRDude integration for CLion</name>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <vendor email="andrii@mamchur.net" url="http://andrii.mamchur.net">Andrii Mamchur</vendor>
 
     <description><![CDATA[Helps to upload hex to AVR MCU using avrdude application]]></description>
     <change-notes><![CDATA[Helps to upload hex to AVR MCU using avrdude application]]></change-notes>
 
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="202.0"/>
     <depends>com.intellij.modules.clion</depends>
 
     <extensions defaultExtensionNs="com.intellij">

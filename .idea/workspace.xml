@@ -3,13 +3,29 @@
   <component name="AnalysisUIOptions">
     <option name="SPLITTER_PROPORTION" value="0.533052" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="04baac26-57c5-47c7-847a-32e56d79acbf" name="Default" comment="">
+    <list default="true" id="04baac26-57c5-47c7-847a-32e56d79acbf" name="Default" comment="Fixed warnings">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeConfigurationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLaunchOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/mamchur/clion/avrdude/AVRDudeLauncher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -28,17 +45,23 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1Pm69c0HCXddTQjKUdqIMIgZgB6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FMX_WebPortal_Dev" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.34914842" />
+    <property name="project.structure.side.proportion" value="0.15074801" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -67,7 +90,7 @@
       <module name="CLionAVRDudePlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <alternative-path path="CLion CL-201.7223.86" alternative-path-enabled="true" />
+      <alternative-path path="CLion CL-202.7660.37" alternative-path-enabled="true" />
       <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,6 +106,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,6 +140,9 @@
       <workItem from="1532248997151" duration="875000" />
       <workItem from="1533586103428" duration="3766000" />
       <workItem from="1543420377163" duration="402000" />
+      <workItem from="1591266226517" duration="639000" />
+      <workItem from="1592555673090" duration="27000" />
+      <workItem from="1602859444289" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented upload through specified port">
       <created>1533586652942</created>
@@ -124,11 +151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533586652942</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed warnings">
+      <created>1589972980019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589972980019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -144,72 +178,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented upload through specified port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented upload through specified port" />
+    <MESSAGE value="Fixed warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed warnings" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="131" width="1024" height="857" key="#Project_Structure" timestamp="1589971739671">
+    <state x="458" y="117" width="1024" height="857" key="#Project_Structure" timestamp="1602859599401">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="482" y="131" width="1024" height="857" key="#Project_Structure/72.27.1848.1053@72.27.1848.1053" timestamp="1589971739671" />
-    <state x="458" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589972621478">
+    <state x="458" y="117" width="1024" height="857" key="#Project_Structure/72.27.1848.1053@72.27.1848.1053" timestamp="1602859599401" />
+    <state x="458" y="207" width="1076" height="694" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602859585351">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="458" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1589972621478" />
-    <state x="734" y="407" width="520" height="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589972769509">
+    <state x="458" y="207" width="1076" height="694" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602859585351" />
+    <state x="782" y="272" width="424" height="525" key="FileChooserDialogImpl" timestamp="1602859579046">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="734" y="407" width="520" height="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/72.27.1848.1053@72.27.1848.1053" timestamp="1589972769509" />
-    <state width="1802" height="299" key="GridCell.Tab.0.bottom" timestamp="1589972770297">
+    <state x="782" y="272" width="424" height="525" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1602859579046" />
+    <state x="482" y="131" width="1355" height="657" key="SettingsEditor" timestamp="1602859560979">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="299" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.0.center" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.0.left" timestamp="1589972770296">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770296" />
-    <state width="1802" height="299" key="GridCell.Tab.0.right" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.1.bottom" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.1.center" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.1.left" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.1.right" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.2.bottom" timestamp="1589972770298">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.2.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770298" />
-    <state width="1802" height="299" key="GridCell.Tab.2.center" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.2.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.2.left" timestamp="1589972770297">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.2.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770297" />
-    <state width="1802" height="299" key="GridCell.Tab.2.right" timestamp="1589972770298">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1802" height="299" key="GridCell.Tab.2.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589972770298" />
-    <state x="684" y="290" width="623" height="522" key="find.popup" timestamp="1589972420497">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="684" y="290" width="623" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1589972420497" />
+    <state x="482" y="131" width="1355" height="657" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1602859560979" />
   </component>
 </project>

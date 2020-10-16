@@ -11,8 +11,8 @@ import com.intellij.execution.process.ProcessHandler;
 import com.intellij.openapi.project.Project;
 import com.intellij.xdebugger.XDebugSession;
 import com.jetbrains.cidr.cpp.execution.CMakeAppRunConfiguration;
+import com.jetbrains.cidr.execution.CidrLauncher;
 import com.jetbrains.cidr.execution.debugger.CidrDebugProcess;
-import com.jetbrains.cidr.execution.testing.CidrLauncher;
 import org.apache.commons.lang.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
